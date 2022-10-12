@@ -39,7 +39,7 @@ section {
   width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 /* Header */
@@ -80,7 +80,8 @@ section {
   width: 281px;
 }
 
-.nav-items {}
+.nav-items {
+}
 
 .header-contacts {
   display: flex;
@@ -129,12 +130,11 @@ section {
 .hero {
   text-align: center;
   padding: 200px 0;
-  background-color: var(--color-background-hero);
   background-image: var(--overlay), url('../images/header-img.jpg');
+  background-color: var(--color-background-hero);
   background-repeat: no-repeat;
   background-position: center;
 }
-
 /*Стилизация основного заголовка */
 .hero-title {
   width: 696px;
@@ -174,7 +174,8 @@ section {
 }
 
 /* Стилизация секции особенности */
-.features {}
+.features {
+}
 
 .features-icons-list {
   list-style: none;
@@ -184,15 +185,16 @@ section {
   padding-bottom: 30px;
 }
 
-.features-icons-item {}
+.features-icons-item {
+}
 
 .features-icons-link {
   width: 270px;
-    height: 120px;
-    display: block;
-    border: 1px solid #999999;
-    border-radius: 4px;
-    
+  height: 120px;
+  display: block;
+  background-color: var(--color-button);
+  border: 1px solid #999999;
+  border-radius: 4px;
 }
 
 .features-list {
@@ -280,7 +282,8 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {}
+.team-img {
+}
 
 .name-card {
   padding-top: 30px;
@@ -305,7 +308,8 @@ section {
   text-align: center;
 }
 
-.social-icons {}
+.social-icons {
+}
 
 .social-list {
   list-style: none;
@@ -315,7 +319,8 @@ section {
   padding-bottom: 30px;
 }
 
-.social-item {}
+.social-item {
+}
 
 .social-link {
   width: 44px;
@@ -337,7 +342,7 @@ section {
   margin-bottom: 50px;
 }
 
-.list-button>.menu-item:not(:last-child) {
+.list-button > .menu-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -376,7 +381,13 @@ section {
   background: var(--color-white);
 }
 
-.projects-img {}
+.projects-item:hover,
+.projects-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-img {
+}
 
 .projects-name {
   padding: 20px 24px;
@@ -432,7 +443,7 @@ section {
   list-style-type: none;
 }
 
-.footer-contacs>.footer-item:not(:last-child) {
+.footer-contacs > .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
