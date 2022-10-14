@@ -4,6 +4,7 @@
   --color-accent: #2196f3;
   --color-button: #f5f4fa;
   --color-white: #ffffff;
+  --color-gray-icons: #afb1b8;
   --color-background-hero: #c4c4c4;
   --color-background-footer: #2f303a;
   --overlay: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
@@ -309,8 +310,6 @@ section {
   text-align: center;
 }
 
-.social-icons {}
-
 .social-list {
   list-style: none;
   display: flex;
@@ -319,15 +318,20 @@ section {
   padding-bottom: 30px;
 }
 
-.social-item {}
-
 .social-link {
   width: 44px;
   height: 44px;
-  display: block;
-  background-color: tomato;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-white );
   border-radius: 50%;
 }
+
+.social-icon {
+fill: var(--color-gray-icons);
+}
+
 
 /* Стилизация кнопок на странице Портфолио */
 .menu {
