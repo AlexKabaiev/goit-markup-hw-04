@@ -109,13 +109,19 @@ section {
 .mail-icon,
 .phone-icon {
   margin-right: 10px;
-  fill: var(--color-primary);
+  fill: currentColor;
 }
 
 .mail-icon:hover,
 .phone-icon:hover {
-  fill: var(--color-accent);
+  fill: currentColor;
 }
+
+.mail-icon:focus,
+.phone-icon:focus {
+  fill: currentColor;
+}
+
 
 .mail-head,
 .phone-head {
@@ -131,6 +137,11 @@ section {
 
 .mail-head:hover,
 .phone-head:hover {
+  color: var(--color-accent);
+}
+
+.mail-head:focus,
+.phone-head:focus {
   color: var(--color-accent);
 }
 
@@ -293,7 +304,7 @@ section {
 
 .name-card {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team-name {
@@ -333,7 +344,8 @@ section {
   border-radius: 50%;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   fill: var(--color-white);
   background-color: var(--color-accent);
 }
@@ -367,7 +379,8 @@ section {
   fill: var(--color-gray-icons);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--color-accent);
   fill: var(--color-accent);
 }
@@ -544,6 +557,7 @@ section {
   border-radius: 50%;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--color-accent);
 }
